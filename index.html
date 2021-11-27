@@ -9,54 +9,56 @@
 <body>
     <fieldset>
         <legend>Cadastro</legend>
-        <form action="">Nome <br>
-            <input type="text" name="name"> 
+        <form action="" method="POST" enctype="multipart/form-data"> 
+            <label for="name">Nome</label> <br>
+            <input type="text" name="name" id="name" required> 
             <p>
-                Email <br>
-                <input type="email" name="email">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" required>
             </p>
             <p>
-                Idade <br>
-                <input type="number" name="age" min="12">
+                <label for="age">Idade</label> <br>
+                <input type="number" name="age" min="12" id="age" step="1" required>
             </p>
             <p>
-                Data de Nascimento <br>
-                <input type="date" name="date">
+                <label for="borndate">Data de Nascimento</label> <br>
+                <input type="date" name="date" id="borndate" required>
             </p>
             <p>
-                Onde você possui conta: <br>
-               <input type="checkbox" name="inputinsta">Instagram
-               <input type="checkbox" name="inputfb">Facebook
-               <input type="checkbox" name="inputyt">Youtube
+                <label for="accounts">Onde você possui conta: <br>
+               <label><input type="checkbox" name="inputinsta" id="accounts">Instagram</label>
+               <label><input type="checkbox" name="inputfb" id="accounts">Facebook</label>
+               <label><input type="checkbox" name="inputyt" id="accounts">Youtube</label>  
+            </label>
             </p>
             <p>
-                Sexo <br>
-                <input type="radio" name="gender" value="op1">Masculino
-                <input type="radio" name="gender" value="op2">Feminino
+                <label for="gender">Sexo</label> <br>
+                <input type="radio" name="gender" value="op1" id="gender">Masculino
+                <input type="radio" name="gender" value="op2" id="gender">Feminino
             </p>
             <p>
-                Cor dos olhos
-                <input type="color" name="eyecolor">
+                <label for="color">Cor dos olhos</label>
+                <input type="color" name="eyecolor" id="color" required>
             </p>
             <p>
-                Biografia <br>
-                <textarea name="about" cols="25" rows="2"></textarea>
+                <label for="about">Biografia</label> <br>
+                <textarea name="about" cols="25" rows="2" id="about" required></textarea>
             </p>
             <p>
-                Foto de perfil <br>
-                <input type="file" accept="image/*" name="profile">
+                <label for="profilephoto">Foto de perfil</label> <br>
+                <input type="file" accept="image/*" name="profile" id="profilephoto" required>
             </p>
             <p>
-                Telefone <br>
-                <input type="number" name="number">
+               <label for="number">Telefone</label> <br>
+                <input type="number" name="number" id="number" required>
             </p>
             <p>
-                Link do Pefil do Facebook <br>
-                <input type="url" name="ulrfacebook">
+                <label for="urlfb">Link do Pefil do Facebook</label> <br>
+                <input type="url" name="ulrfacebook" id="urlfb" required>
             </p>
             <p>
-                Senha <br>
-                <input type="password" name="password" minlength="6" maxlength="8">
+                <label for="pw">Senha</label> <br>
+                <input type="password" name="password" minlength="6" maxlength="8" id="pw" required>
             </p>
             <button type="reset" value="reset">Limpar</button>
             <button type="submit" value="form">Enviar Dados</button>
