@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Desafio HTML</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Cadastro</legend>
+        <form action="">Nome <br>
+            <input type="text" name="name"> 
+            <p>
+                Email <br>
+                <input type="email" name="email">
+            </p>
+            <p>
+                Idade <br>
+                <input type="number" name="age" min="12">
+            </p>
+            <p>
+                Data de Nascimento <br>
+                <input type="date" name="date">
+            </p>
+            <p>
+                Onde você possui conta: <br>
+               <input type="checkbox" name="inputinsta">Instagram
+               <input type="checkbox" name="inputfb">Facebook
+               <input type="checkbox" name="inputyt">Youtube
+            </p>
+            <p>
+                Sexo <br>
+                <input type="radio" name="gender" value="op1">Masculino
+                <input type="radio" name="gender" value="op2">Feminino
+            </p>
+            <p>
+                Cor dos olhos
+                <input type="color" name="eyecolor">
+            </p>
+            <p>
+                Biografia <br>
+                <textarea name="about" cols="25" rows="2"></textarea>
+            </p>
+            <p>
+                Foto de perfil <br>
+                <input type="file" accept="image/*" name="profile">
+            </p>
+            <p>
+                Telefone <br>
+                <input type="number" name="number">
+            </p>
+            <p>
+                Link do Pefil do Facebook <br>
+                <input type="url" name="ulrfacebook">
+            </p>
+            <p>
+                Senha <br>
+                <input type="password" name="password" minlength="6" maxlength="8">
+            </p>
+            <button type="reset" value="reset">Limpar</button>
+            <button type="submit" value="form">Enviar Dados</button>
+        </form>
+            
+    </fieldset>
+</body>
+</html>
